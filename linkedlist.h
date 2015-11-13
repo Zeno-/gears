@@ -4,12 +4,12 @@
 #define DECLARE_AS_LIST_NODE ListNode linkage;
 
 typedef struct listnode {
-    struct listnode *prev, *next;
+	struct listnode *prev, *next;
 } ListNode;
 
 typedef struct {
-    ListNode dnode; // dummy head
-    size_t len;\
+	ListNode dnode; // dummy head
+	size_t len;
 } List;
 
 List *list_new(void);
