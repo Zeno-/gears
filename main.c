@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 #include "linkedlist.h"
 
@@ -33,6 +34,7 @@ int main(void)
         }
         newnode->v = i;
         list_prepend(mylist, (ListNode *)newnode);
+		assert(list_is_node_present(mylist, (ListNode *)newnode));
     }
 
 

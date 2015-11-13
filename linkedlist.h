@@ -9,7 +9,7 @@ typedef struct listnode {
 
 typedef struct {
     ListNode dnode; // dummy head
-    size_t len;
+    size_t len;\
 } List;
 
 List *list_new(void);
@@ -20,6 +20,8 @@ void list_delink_all(List *list);
 int list_is_empty(const List *list);
 int list_is_head(const List *list, const ListNode *currnode);
 int list_is_tail(const List *list, const ListNode *currnode);
+int list_is_node_present(const List *list, const ListNode *currnode);
+
 
 ListNode *list_head(const List *list);
 ListNode *list_tail(const List *list);

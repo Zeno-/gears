@@ -58,6 +58,16 @@ int list_is_tail(const List *list, const ListNode *node)
     return list->dnode.prev == node;
 }
 
+int list_is_node_present(const List *list, const ListNode *currnode)
+{
+	ListNode *cnode = list->dnode.next;
+
+    while (cnode != &list->dnode) {
+		if (cnode == currnode)
+			break;
+	}
+	return cnode != &list->dnode;
+}
 
 ListNode *list_head(const List *list)
 {
