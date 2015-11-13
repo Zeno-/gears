@@ -34,7 +34,7 @@ int main(void)
 		}
 		newnode->v = i;
 		list_prepend(mylist, (ListNode *)newnode);
-		assert(list_is_node_present(mylist, (ListNode *)newnode));
+		assert(list_contains_node(mylist, (ListNode *)newnode));
 	}
 
 
