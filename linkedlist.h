@@ -1,8 +1,6 @@
 #ifndef LINKED_LIST_H
 #define LINKED_LIST_H
 
-#define DECLARE_AS_LIST_NODE ListNode linkage;
-
 typedef struct listnode {
 	struct listnode *prev, *next;
 } ListNode;

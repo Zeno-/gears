@@ -5,7 +5,7 @@
 #include "linkedlist.h"
 
 struct intnode {
-	DECLARE_AS_LIST_NODE
+	ListNode linkage;
 	int v;
 };
 
